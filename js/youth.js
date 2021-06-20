@@ -90,8 +90,7 @@ if (isGetCookie = typeof $request !== 'undefined') {
         timeZone = new Date().getTimezoneOffset() / 60;
         timestamp = Date.now() + (8 + timeZone) * 60 * 60 * 1000;
         bjTime = new Date(timestamp).toLocaleString('zh', {hour12: false, timeZoneName: 'long'});
-      
-				$.log(`\n === 脚本执行${bjTime} === \n`);
+        $.log(`\n === 脚本执行${bjTime} === \n`);
         $.log(` =========== 您共提供${cookieArr.length}个中青账号 ==========`);
         if (!cookieArr[0]) {
             $.msg($.name, '【提示】请先获取中青看点一cookie', "", {'open-url': "https://kandian.youth.cn/u/mhkjN"});
@@ -544,10 +543,10 @@ function batHost(api, body) {
             'access':'WIFI',
             'os-api': '26',
             'device-platform': 'android',
-            'openudid': '6fce5c99fcb5a451',
+            'openudid': '83bcb1d7cab0195e',
             'app-version': '2.4.3',
             'Content-Type': 'application/x-www-form-urlencoded',
-            'Content-Length': '1197',
+            'Content-Length': '1535',
             'Host': 'kandian.youth.cn',
             'Connection': 'Keep-Alive',
             'Accept-Encoding': 'gzip',
