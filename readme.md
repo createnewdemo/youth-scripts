@@ -54,6 +54,7 @@ http-request https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\d?\.json script-path=
 ```
 [rewrite_remote]
 https://raw.githubusercontent.com/abclouds/youth-scripts/main/qx_rewite.txt
+https://raw.githubusercontent.com/abclouds/youth-scripts/main/qx_youthread.txt
 ```
    * 本地重写配置
    
@@ -64,6 +65,8 @@ https:\/\/ios\.baertt\.com\/v5\/article\/info\/get\.json url script-request-head
 https:\/\/ios\.baertt\.com\/v5\/user\/stay\.json url script-request-body https://raw.githubusercontent.com/abclouds/youth-scripts/master/js/youth.js
 https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\d?\.json url script-request-body https://raw.githubusercontent.com/abclouds/youth-scripts/master/js/youth.js
 ```
+
+
    * 本地任务配置
    
 ```
@@ -77,6 +80,22 @@ https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\d?\.json url script-request-body h
   - 正常提现一次，获取提现请求(可选，AC无添加)
   
  >>> [回到顶部](#IOS配置教程)
+ 
+### 食用方法：
+youth.js
+1.到[重写]-[引用],启动qx_rewite.txt禁用qx_youthread.txt,先获取cookie
+签到cookie:
+进入app，进入任务中心或者签到一次
+阅读请求body&阅读时长:
+阅读一篇文章或者视频到获取金币奖励
+惊喜红包:
+在阅读文章拉下面有个惊喜红包，点击获取
+
+2.手动执行一次定时脚本-”中青看点极速版”,看签到是不是正常
+3.到[重写]-[引用],启动qx_youthread.txt禁用qx_rewite.txt,获取文章body
+阅读请求body:阅读一篇文章或者视频到获取金币奖励,通知提示body1
+4.手动执行一次定时脚本-”中青阅读”,是不是运行正常
+5.获取更多的body,一天一般上限7200金币,建议获取200个body
 
 ### Nodejs 配置密钥 (Github Actions)
 
