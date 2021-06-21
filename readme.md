@@ -7,7 +7,7 @@
 ### IOS配置教程
  ```
 [MITM]
-hostname = kd.youth.cn, ios.baertt.com 
+hostname = kd.youth.cn, kandian.wkandian.com
  ```
 #### Surge:
 * [模块地址](https://raw.githubusercontent.com/abclouds/youth-scripts/master/surge.sgmodule)
