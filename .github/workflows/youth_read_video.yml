@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-      YOUTH_READ: ${{ secrets.YOUTH_READ_VIDEO }}
-      YOUTH_READ2: ${{ secrets.YOUTH_READ_VIDEO2 }}
-			YOUTH_READ3: ${{ secrets.YOUTH_READ_VIDEO3 }}
+      YOUTH_READ_VIDEO: ${{ secrets.YOUTH_READ_VIDEO }}
+      YOUTH_READ_VIDEO2: ${{ secrets.YOUTH_READ_VIDEO2 }}
+			YOUTH_READ_VIDEO3: ${{ secrets.YOUTH_READ_VIDEO3 }}
       TZ: Asia/shanghai
     steps:
       - name: Checkout
