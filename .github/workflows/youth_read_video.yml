@@ -16,6 +16,7 @@ jobs:
     env:
       YOUTH_READ: ${{ secrets.YOUTH_READ_VIDEO }}
       YOUTH_READ2: ${{ secrets.YOUTH_READ_VIDEO2 }}
+			YOUTH_READ3: ${{ secrets.YOUTH_READ_VIDEO3 }}
       TZ: Asia/shanghai
     steps:
       - name: Checkout
@@ -44,4 +45,11 @@ jobs:
           YOUTH_READ: ${{ secrets.YOUTH_READ_VIDEO2 }}
           YOUTH_ATIME: ${{ secrets.YOUTH_ATIME }}
           
+      - name: '运行 【中青看点自动阅读三】'
+        if: env.YOUTH_READ3
+        run: |
+          node js/Youth_Read.js
+        env:
+          YOUTH_READ: ${{ secrets.YOUTH_READ_VIDEO3 }}
+          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME }}          
  

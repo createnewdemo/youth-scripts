@@ -16,7 +16,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     env:
         YOUTH_START: ${{ secrets.YOUTH_START }}
-        YOUTH_END: ${{ secrets.YOUTH_END }}
+        YOUTH_LOOK: ${{ secrets.YOUTH_LOOK }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -33,6 +33,8 @@ jobs:
         run: |
           node js/youth_gain.js
         env:
+          YOUTH_START: ${{ secrets.YOUTH_START }}
+          YOUTH_LOOK: ${{ secrets.YOUTH_LOOK }}
           YOUTH_NOTIFY_CONTROL: ${{ secrets.YOUTH_NOTIFY_CONTROL }}
           TZ: Asia/shanghai
           PUSH_KEY: ${{ secrets.PUSH_KEY}}
