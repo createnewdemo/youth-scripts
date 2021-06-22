@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-      YOUTH_READ_VIDEO: ${{ secrets.YOUTH_READ_VIDEO }}
-      YOUTH_READ_VIDEO2: ${{ secrets.YOUTH_READ_VIDEO2 }}
-			YOUTH_READ_VIDEO3: ${{ secrets.YOUTH_READ_VIDEO3 }}
+      YOUTH_READ: ${{ secrets.YOUTH_READ_VIDEO }}
+      YOUTH_READ2: ${{ secrets.YOUTH_READ_VIDEO2 }}
+	  YOUTH_READ3: ${{ secrets.YOUTH_READ_VIDEO3 }}
       TZ: Asia/shanghai
     steps:
       - name: Checkout
@@ -28,7 +28,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-          
+
       - name: '运行 【中青看点自动阅读一】'
         if: env.YOUTH_READ
         run: |
@@ -36,7 +36,7 @@ jobs:
         env:
           YOUTH_READ: ${{ secrets.YOUTH_READ_VIDEO }}
           YOUTH_ATIME: ${{ secrets.YOUTH_ATIME }}
-          
+
       - name: '运行 【中青看点自动阅读二】'
         if: env.YOUTH_READ2
         run: |
@@ -44,12 +44,11 @@ jobs:
         env:
           YOUTH_READ: ${{ secrets.YOUTH_READ_VIDEO2 }}
           YOUTH_ATIME: ${{ secrets.YOUTH_ATIME }}
-          
+
       - name: '运行 【中青看点自动阅读三】'
         if: env.YOUTH_READ3
         run: |
           node js/Youth_Read.js
         env:
           YOUTH_READ: ${{ secrets.YOUTH_READ_VIDEO3 }}
-          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME }}          
- 
+          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME }}
