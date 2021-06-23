@@ -35,7 +35,7 @@ jobs:
           node js/Youth_Read.js
         env:
           YOUTH_READ: ${{ secrets.YOUTH_READ_VIDEO_ }}
-          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME }}
+          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME2 }}
 
       - name: '运行 【中青看点自动阅读二】'
         if: env.YOUTH_READ2
@@ -43,7 +43,7 @@ jobs:
           node js/Youth_Read.js
         env:
           YOUTH_READ: ${{ secrets.YOUTH_READ_VIDEO_2 }}
-          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME }}
+          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME2 }}
 
       - name: '运行 【中青看点自动阅读三】'
         if: env.YOUTH_READ3
@@ -51,4 +51,4 @@ jobs:
           node js/Youth_Read.js
         env:
           YOUTH_READ: ${{ secrets.YOUTH_READ_VIDEO_3 }}
-          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME }}
+          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME2 }}
