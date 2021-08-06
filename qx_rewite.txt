@@ -1,14 +1,17 @@
 hostname = kd.youth.cn, kandian.wkandian.com
 
-https:\/\/kd\.youth\.cn\/WebApi\/v17\/NewTaskIos\/getTaskList\.json url script-request-header https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js
+
+
+
+https:\/\/kandian\.wkandian\.com\/v17\/NewTaskIos\/getTaskList\.json url script-request-header https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js
 
 https:\/\/kandian\.wkandian\.com\/v5\/article\/info\.json url script-request-header https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js
 
 https:\/\/kandian\.wkandian\.com\/v5\/user\/stay\.json url script-request-body https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js
 
-https:\/\/kandian\.wkandian\.com\/v5\/task\/browse_start\.json url script-request-body https://raw.githubusercontent.com/Sunert/Script/master/Task/youth_gain.js
+https:\/\/kandian\.wkandian\.com\/v6\/count\/start\.json url script-request-body https://raw.githubusercontent.com/Sunert/Script/master/Task/youth_gain.js
 
-https:\/\/kandian\.wkandian\.com\/v5\/Nameless\/adlickstart\.json url script-request-body https://raw.githubusercontent.com/Sunert/Script/master/Task/youth_gain.js
+https:\/\/kd\.youth\.cn\/webApi\/Nameless\/getTaskBrowse url script-request-body https://raw.githubusercontent.com/Sunert/Script/master/Task/youth_gain.js
 
 https:\/\/kandian\.wkandian\.com\/v5\/\w+\/withdraw\d?\.json url script-request-body https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js
 
