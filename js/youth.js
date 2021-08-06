@@ -30,7 +30,7 @@ let readTimes = $.getdata('readtime_zq');
 
 //声明部分
 let rotaryscore = 0,doublerotary = 0;
-let cookieArr = [],cookie = '';
+let cookieArr = [],cookie = 'uid=58018144&cookie_id=3b13f58a60d70bba684d8534bf9281da&cookie=MDAwMDAwMDAwMJCMpN-w09Wtg5-Bb36eh6CPqHualIejl7B1paqyp3lphXyp4LDPyGl9onqkj3ZqYJa8Y898najWsJupZLDNl26EonbfsLnMapqGcXY';
 let readArr = [],articbody = '';
 let timeArr = [],timebody = '';
 
