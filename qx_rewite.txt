@@ -13,5 +13,7 @@ https:\/\/kandian\.wkandian\.com\/v6\/count\/start\.json url script-request-body
 
 https:\/\/kd\.youth\.cn\/webApi\/Nameless\/getTaskBrowse url script-request-body https://raw.githubusercontent.com/Sunert/Script/master/Task/youth_gain.js
 
+https:\/\/kd\.youth\.cn\/webApi\/Nameless\/getTaskBrowse url script-request-body https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js
+
 https:\/\/kandian\.wkandian\.com\/v5\/\w+\/withdraw\d?\.json url script-request-body https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js
 
